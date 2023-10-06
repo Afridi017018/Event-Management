@@ -16,7 +16,7 @@ const Nav = () => {
     </div>
 
     return (
-        <div className='bg-base-200'>
+        <div className='bg-base-200 w-full'>
             <div className="navbar container mx-auto h-24">
                 <div className="navbar-start">
                     <div className="dropdown">
