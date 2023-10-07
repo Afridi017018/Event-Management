@@ -1,10 +1,11 @@
 import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../components/providers/AuthProvider';
+import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
-    const {signIn} = useContext(AuthContext);
+    const {signIn, signInGoogle} = useContext(AuthContext);
 
     const handleLogin = async (e)=>{
         e.preventDefault();
@@ -16,6 +17,15 @@ const Login = () => {
         //  console.log(email, password);
         const login = await signIn(email,password);
         console.log(login.user)
+     }
+
+     const handleGoogleLogin =async (e)=>{
+        e.preventDefault();
+        
+
+        const login = await signInGoogle();
+        console.log(login.user)
+
      }
 
     return (
@@ -48,6 +58,11 @@ const Login = () => {
                             
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Login</button>
+                            </div>
+
+                            <div onClick={handleGoogleLogin} className="mt-6 btn btn-primary flex gap-5 justify-center">
+                                  <div className='text-xl'><FcGoogle /></div>
+                                <div>Sign In With Google</div>
                             </div>
                         </form>
                     </div>
