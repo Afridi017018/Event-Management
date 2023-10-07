@@ -1,8 +1,12 @@
 import React from 'react';
+import { useContext } from 'react';
+import { AuthContext } from '../../components/providers/AuthProvider';
 
 const Login = () => {
 
-    const handleLogin = (e)=>{
+    const {signIn} = useContext(AuthContext);
+
+    const handleLogin = async (e)=>{
         e.preventDefault();
  
         const newForm = new FormData(e.currentTarget);
@@ -10,6 +14,8 @@ const Login = () => {
          const email = newForm.get('email');
          const password = newForm.get('password');
         //  console.log(email, password);
+        const login = await signIn(email,password);
+        console.log(login.user)
      }
 
     return (

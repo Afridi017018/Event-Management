@@ -16,7 +16,7 @@ const Register = () => {
         // console.log(name, photo, email, password);
 
         const now =await createUser(email,password,name,photo)
-        const then = await updateUser(name,photo);
+        await updateUser(name,photo);
 
         console.log(now.user);
    
