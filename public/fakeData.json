@@ -1,65 +1,74 @@
 [
     {
-      "name": "Marriage/Wedding",
-      "image": "",
-      "price": 5000,
-      "short_description": "Celebrate the union of two hearts with our exquisite wedding planning services.",
-      "event_details": "A wedding is a once-in-a-lifetime event, and we understand the importance of making it truly memorable. Our wedding planning services offer a comprehensive approach to ensure that your special day goes off without a hitch. From selecting the perfect venue to crafting a personalized menu, we pay attention to every detail. Our team of experienced professionals will work closely with you to create the wedding of your dreams. Whether you envision an intimate ceremony or a grand celebration, we can bring your vision to life. With attention to aesthetics, logistics, and guest experience, we promise a day filled with love, joy, and beautiful memories that will last a lifetime."
+        "id": "5f34b7f1243a21c5e5e0d9a1",
+        "name": "Marriage/Wedding",
+        "image": "https://img.freepik.com/premium-vector/wedding-ceremony-celebration-flat-illustration-newly-married-couple-with-guests-bride-groom-dancing-first-time-cartoon-characters-with-decorated-banquet-hall-background_151150-4935.jpg?w=740",
+        "price": 5000,
+        "short_description": "Celebrate the union of two hearts with our exquisite wedding planning services.",
+        "event_details": "A wedding is a once-in-a-lifetime event, and we understand the importance of making it truly memorable. Our wedding planning services offer a comprehensive approach to ensure that your special day goes off without a hitch. From selecting the perfect venue to crafting a personalized menu, we pay attention to every detail. Our team of experienced professionals will work closely with you to create the wedding of your dreams. Whether you envision an intimate ceremony or a grand celebration, we can bring your vision to life. With attention to aesthetics, logistics, and guest experience, we promise a day filled with love, joy, and beautiful memories that will last a lifetime."
     },
     {
-      "name": "Birthday Party",
-      "image": "",
-      "price": 800,
-      "short_description": "Make your special day memorable with a fun-filled birthday party.",
-      "event_details": "Birthdays are a time for joy and celebration, and we specialize in creating unforgettable birthday parties for all ages. Whether you're planning a child's themed birthday bash or an elegant adult soirée, our team is here to make it happen. From colorful decorations to delicious cakes, we handle all the party essentials. Let us know your preferences, and we'll customize the event to reflect your personality and style. Our goal is to ensure that your birthday party is filled with laughter, love, and cherished moments with friends and family."
+        "id": "6091a71cd4d6d4e84eb1a876",
+        "name": "Birthday Party",
+        "image": "https://img.freepik.com/free-vector/cartoon-happy-birthday-children-party-with-holiday-decoration-backyard-festive-table-with-cake-candles-kids-celebration-grass-lawn-with-slide-pink-rocking-horse-balloons-bunches_88138-786.jpg?w=740&t=st=1696708622~exp=1696709222~hmac=07851616ad400191be4974e18799a50005881bae8c3403d72aa131204340f7bd",
+        "price": 800,
+        "short_description": "Make your special day memorable with a fun-filled birthday party.",
+        "event_details": "Birthdays are a time for joy and celebration, and we specialize in creating unforgettable birthday parties for all ages. Whether you're planning a child's themed birthday bash or an elegant adult soirée, our team is here to make it happen. From colorful decorations to delicious cakes, we handle all the party essentials. Let us know your preferences, and we'll customize the event to reflect your personality and style. Our goal is to ensure that your birthday party is filled with laughter, love, and cherished moments with friends and family."
     },
     {
-      "name": "Baby Shower",
-      "image": "",
-      "price": 400,
-      "short_description": "Welcome the arrival of a new bundle of joy with a joyful baby shower.",
-      "event_details": "A baby shower is a heartwarming celebration of new life, and we take pride in organizing memorable baby showers that capture the essence of this special moment. Whether you're expecting a boy or a girl, or even if you're keeping it a surprise, we have the perfect theme and decorations to make your baby shower unique. From adorable invitations to games that will have your guests smiling, we ensure that every aspect is taken care of. It's a time to shower the mom-to-be with love and well wishes, and our team is here to make it a stress-free and joyful occasion."
+        "id": "62de8f5c10d61f9a8cd5db32",
+        "name": "Baby Shower",
+        "image": "https://img.freepik.com/premium-vector/baby-shower-party-flat-color-vector-illustration_151150-8465.jpg?w=740",
+        "price": 400,
+        "short_description": "Welcome the arrival of a new bundle of joy with a joyful baby shower.",
+        "event_details": "A baby shower is a heartwarming celebration of new life, and we take pride in organizing memorable baby showers that capture the essence of this special moment. Whether you're expecting a boy or a girl, or even if you're keeping it a surprise, we have the perfect theme and decorations to make your baby shower unique. From adorable invitations to games that will have your guests smiling, we ensure that every aspect is taken care of. It's a time to shower the mom-to-be with love and well wishes, and our team is here to make it a stress-free and joyful occasion."
     },
     {
-      "name": "Retirement Party",
-      "image": "",
-      "price": 1000,
-      "short_description": "Bid farewell to a colleague in style with our retirement party planning.",
-      "event_details": "Retirement is a milestone worth celebrating, and our retirement party planning services are designed to give your colleague a memorable send-off. Whether you're honoring a long-time employee or a dear friend, we'll help you create an event that reflects their achievements and contributions. From heartfelt speeches to personalized gifts, we ensure that every detail is perfect. Let us handle the logistics while you focus on showing your appreciation and making the retiree's transition to a new chapter in life truly special."
+        "id": "57b4e18f9fb28d9c0aae56b7",
+        "name": "Retirement Party",
+        "image": "https://img.freepik.com/free-vector/happy-couple-welcome-guests-enjoying-drinks-snacks-their-home-flat-vector-illustration_1284-83962.jpg?w=740&t=st=1696697915~exp=1696698515~hmac=f80eb0fe73dda17e6d94f2a1e045ecfd0e5526971bac8f1a677d431bc19a07e1",
+        "price": 1000,
+        "short_description": "Bid farewell to a colleague in style with our retirement party planning.",
+        "event_details": "Retirement is a milestone worth celebrating, and our retirement party planning services are designed to give your colleague a memorable send-off. Whether you're honoring a long-time employee or a dear friend, we'll help you create an event that reflects their achievements and contributions. From heartfelt speeches to personalized gifts, we ensure that every detail is perfect. Let us handle the logistics while you focus on showing your appreciation and making the retiree's transition to a new chapter in life truly special."
     },
     {
-      "name": "Graduation Ceremony",
-      "image": "",
-      "price": 600,
-      "short_description": "Celebrate academic achievements with a well-organized graduation ceremony.",
-      "event_details": "Graduation is a significant milestone in one's life, and we understand the importance of celebrating it in style. Whether it's a high school graduation, college commencement, or any other academic achievement, our team can help you plan a memorable graduation ceremony. We take care of all the details, from selecting a suitable venue to coordinating the program and providing academic regalia. Our goal is to ensure that the graduates feel proud of their accomplishments and that their families and friends share in their joy. Let us help you create a ceremony that marks the beginning of a bright future."
+        "id": "6a91e72b3cda1d8f92c084ef",
+        "name": "Graduation Ceremony",
+        "image": "https://img.freepik.com/free-vector/flat-prom-background_23-2149370326.jpg?w=740&t=st=1696697968~exp=1696698568~hmac=faaea34822e843411a55e24bfb81aab692cff2343aea2bddcce87caa66a3da5c",
+        "price": 600,
+        "short_description": "Celebrate academic achievements with a well-organized graduation ceremony.",
+        "event_details": "Graduation is a significant milestone in one's life, and we understand the importance of celebrating it in style. Whether it's a high school graduation, college commencement, or any other academic achievement, our team can help you plan a memorable graduation ceremony. We take care of all the details, from selecting a suitable venue to coordinating the program and providing academic regalia. Our goal is to ensure that the graduates feel proud of their accomplishments and that their families and friends share in their joy. Let us help you create a ceremony that marks the beginning of a bright future."
     },
     {
-      "name": "Anniversary Celebration",
-      "image": "",
-      "price": 1200,
-      "short_description": "Rekindle your love and cherish the years together with an anniversary celebration.",
-      "event_details": "Anniversaries are a time to reflect on the love and commitment that have kept a couple together through the years. Our anniversary celebration services are designed to help you create a memorable event that honors your journey together. Whether you're celebrating one year or fifty, we'll plan an evening of romance and nostalgia. From elegant decor to a gourmet meal, we'll set the stage for a beautiful celebration. Let us handle the details while you focus on each other and the love that has brought you to this special milestone."
+        "id": "5cfe20c4b2a7e3476ee1e2f5",
+        "name": "Anniversary Celebration",
+        "image": "https://img.freepik.com/premium-vector/young-people-party-cartoon-concept_24640-7874.jpg?w=360",
+        "price": 1200,
+        "short_description": "Rekindle your love and cherish the years together with an anniversary celebration.",
+        "event_details": "Anniversaries are a time to reflect on the love and commitment that have kept a couple together through the years. Our anniversary celebration services are designed to help you create a memorable event that honors your journey together. Whether you're celebrating one year or fifty, we'll plan an evening of romance and nostalgia. From elegant decor to a gourmet meal, we'll set the stage for a beautiful celebration. Let us handle the details while you focus on each other and the love that has brought you to this special milestone."
     },
     {
-      "name": "Bridal Shower",
-      "image": "",
-      "price": 300,
-      "short_description": "Honor the bride-to-be with a memorable bridal shower filled with laughter and joy.",
-      "event_details": "A bridal shower is a cherished tradition, and we're here to make it a memorable and fun-filled occasion for the bride-to-be. Whether you're planning an intimate gathering or a lively party, we'll help you create an event that reflects the bride's personality and style. From creative games to delectable treats, we take care of every aspect of the bridal shower. It's a time to celebrate the upcoming wedding and shower the bride with love and well wishes. Let us handle the planning so that you can enjoy the festivities with the bride and her closest friends and family."
+        "id": "5b0c5e29ad42d5f8c9b51e67",
+        "name": "Bridal Shower",
+        "image": "https://img.freepik.com/free-psd/3d-rendering-wedding-illustration_23-2150238002.jpg?w=740&t=st=1696698330~exp=1696698930~hmac=78aa7493ad63b4f347d0f9a6f304a3d858fca613380341745d2f62bd3a721fa9",
+        "price": 300,
+        "short_description": "Honor the bride-to-be with a memorable bridal shower filled with laughter and joy.",
+        "event_details": "A bridal shower is a cherished tradition, and we're here to make it a memorable and fun-filled occasion for the bride-to-be. Whether you're planning an intimate gathering or a lively party, we'll help you create an event that reflects the bride's personality and style. From creative games to delectable treats, we take care of every aspect of the bridal shower. It's a time to celebrate the upcoming wedding and shower the bride with love and well wishes. Let us handle the planning so that you can enjoy the festivities with the bride and her closest friends and family."
     },
     {
-      "name": "Engagement Party",
-      "image": "",
-      "price": 700,
-      "short_description": "Celebrate the engagement of a couple with an elegant engagement party.",
-      "event_details": "An engagement is a joyous occasion, and our engagement party planning services are designed to help you celebrate in style. Whether you prefer an intimate gathering or a glamorous affair, we'll work with you to create an event that captures the love and excitement of the engaged couple. From elegant decorations to a delectable menu, we take care of all the details. It's a time to toast to the future and the journey ahead. Let us make sure your engagement party is a night to remember for the happy couple and their guests."
+        "id": "63fd7100e4aa5e4b7daac856",
+        "name": "Engagement Party",
+        "image": "https://img.freepik.com/premium-vector/huge-wedding-rings-micro-characters-bride-groom-guests-with-gifts-chef-with-big-cake-vector-flat-illustration-wedding-organizer-service-party-celebration-concept-website-page-etc_103044-4979.jpg?w=740",
+        "price": 700,
+        "short_description": "Celebrate the engagement of a couple with an elegant engagement party.",
+        "event_details": "An engagement is a joyous occasion, and our engagement party planning services are designed to help you celebrate in style. Whether you prefer an intimate gathering or a glamorous affair, we'll work with you to create an event that captures the love and excitement of the engaged couple. From elegant decorations to a delectable menu, we take care of all the details. It's a time to toast to the future and the journey ahead. Let us make sure your engagement party is a night to remember for the happy couple and their guests."
     },
     {
-      "name": "Job Promotion Party",
-      "image": "",
-      "price": 500,
-      "short_description": "Congratulate a friend or loved one on their career success with a promotion party.",
-      "event_details": "A job promotion is a significant achievement, and we're here to help you celebrate this career milestone in style. Whether you're honoring a colleague, friend, or family member, we'll create a promotion party that reflects their accomplishments and aspirations. From tasteful decorations to heartfelt speeches, we'll ensure that the event is a reflection of the honoree's journey. It's a time to acknowledge their hard work and dedication while looking forward to the future. Let us handle the planning so that you can focus on congratulating the deserving individual and their continued success."
+        "id": "5a846d7c18a0d6b74ccfe2c9",
+        "name": "Job Promotion Party",
+        "image": "https://img.freepik.com/free-vector/hand-drawn-business-party-illustration_52683-87327.jpg?w=740&t=st=1696698551~exp=1696699151~hmac=abe99071ef252bfbd8632f95493b5ffe0974df07c57a3bc2ca3632bcae9d5c2c",
+        "price": 500,
+        "short_description": "Congratulate a friend or loved one on their career success with a promotion party.",
+        "event_details": "A job promotion is a significant achievement, and we're here to help you celebrate this career milestone in style. Whether you're honoring a colleague, friend, or family member, we'll create a promotion party that reflects their accomplishments and aspirations. From tasteful decorations to heartfelt speeches, we'll ensure that the event is a reflection of the honoree's journey. It's a time to acknowledge their hard work and dedication while looking forward to the future. Let us handle the planning so that you can focus on congratulating the deserving individual and their continued success."
     }
-  ]
+]

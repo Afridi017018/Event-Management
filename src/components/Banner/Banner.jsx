@@ -3,8 +3,8 @@ import React from 'react';
 const Banner = () => {
     return (
         <div>
-            <div className="hero h-[558px]" style={{backgroundImage: 'url(https://img.freepik.com/free-photo/wedding-archway-backyard-happy-wedding-couple-outdoors-before-wedding-ceremony_8353-11057.jpg?w=740&t=st=1696607349~exp=1696607949~hmac=f83e1aa35cd1d70432c4626e1a0ca9262a742a6c7359908153cf09eb196e2f45)'}}>
-  <div className="hero-overlay bg-opacity-70"></div>
+            <div className="hero h-[558px]" style={{backgroundImage: 'url(https://img.freepik.com/free-vector/couple-romantic-dinner-outdoors-illustration_1262-16276.jpg?w=826&t=st=1696699124~exp=1696699724~hmac=47ba3c2b839d7e68e7cf3e0274ba63a079b80712271ef08adb6abc380c4242b0)'}}>
+  <div className="hero-overlay bg-opacity-60"></div>
   <div className="hero-content text-center text-neutral-content">
     <div className="max-w-md opacity-100">
       <h1 className="mb-5 text-4xl font-bold">Your Event, Our Expertise</h1>

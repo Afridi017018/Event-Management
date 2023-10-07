@@ -13,6 +13,7 @@ import ErrorPage from './page/ErrorPage/ErrorPage.jsx';
 import Login from './page/Login/Login.jsx';
 import Register from './page/Register/Register.jsx';
 import AuthProvider from './components/providers/AuthProvider.jsx';
+import ServiceDetails from './page/ServiceDetails/ServiceDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,7 +23,13 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
+        loader: () => fetch('/fakeData.json'),
         element: <Home />,
+      },
+      {
+        path: "/details/:id",
+        loader: () => fetch('/fakeData.json'),
+        element: <ServiceDetails />,
       },
       {
         path: "/login",

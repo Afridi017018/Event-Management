@@ -141,15 +141,15 @@ const Nav = () => {
                         {
                             user === null ||
                             <div className='pr-5 lg:pr-0 flex gap-2 flex-row lg:gap-5 font-medium lg:text-lg'>
-                                <li>
+                                <li className='flex items-center'>
                                     <div>
                                         <img className='h-6 w-6 lg:h-9 lg:w-9 rounded-full' src={user.photoURL} alt="" />
                                     </div>
                                 </li>
-                                <li>
+                                <li className='flex items-center'>
                                     {user.displayName}
                                 </li>
-                                <li onClick={handleLogOut} className='hidden lg:block cursor-pointer'>
+                                <li onClick={handleLogOut} className='hidden lg:flex items-center cursor-pointer'>
                                     Logout
                                 </li>
                             </div>
