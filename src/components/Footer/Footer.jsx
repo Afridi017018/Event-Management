@@ -6,10 +6,10 @@ const Footer = () => {
             <footer className="footer p-10 container mx-auto flex justify-center gap-10 lg:gap-52">
                 <nav>
                     <header className="footer-title">Services</header>
-                    <a className="link link-hover">Branding</a>
-                    <a className="link link-hover">Design</a>
-                    <a className="link link-hover">Marketing</a>
-                    <a className="link link-hover">Advertisement</a>
+                    <a className="link link-hover">Marriage/Wedding</a>
+                    <a className="link link-hover">Birthday Party</a>
+                    <a className="link link-hover">Baby Shower</a>
+                    <a className="link link-hover">Retirement Party</a>
                 </nav>
                 <nav>
                     <header className="footer-title">Company</header>

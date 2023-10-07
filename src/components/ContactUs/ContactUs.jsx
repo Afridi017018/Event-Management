@@ -32,7 +32,7 @@ const ContactUs = () => {
     return (
         <div className='my-16'>
             <div className="hero bg-custom-img">
-                <div className="hero-overlay bg-opacity-80"></div>
+                <div className="hero-overlay bg-opacity-50"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div className='text-center py-10'>
                         <h2 className='text-4xl font-bold text-white m-5'>Contact Us</h2>
