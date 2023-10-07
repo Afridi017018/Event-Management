@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 
 const Login = () => {
 
-    const {signIn, signInGoogle} = useContext(AuthContext);
+    const {signIn, signInGoogle, user} = useContext(AuthContext);
 
     const handleLogin = async (e)=>{
         e.preventDefault();
@@ -16,7 +16,8 @@ const Login = () => {
          const password = newForm.get('password');
         //  console.log(email, password);
         const login = await signIn(email,password);
-        console.log(login.user)
+        // console.log(login.user)
+        
      }
 
      const handleGoogleLogin =async (e)=>{
@@ -24,9 +25,11 @@ const Login = () => {
         
 
         const login = await signInGoogle();
-        console.log(login.user)
+        // console.log(login.user)
 
      }
+
+    //  console.log(user)
 
     return (
         <div>
