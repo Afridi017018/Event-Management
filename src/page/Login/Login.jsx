@@ -2,11 +2,14 @@ import React from 'react';
 import { useContext } from 'react';
 import { AuthContext } from '../../components/providers/AuthProvider';
 import { FcGoogle } from "react-icons/fc";
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Login = () => {
+    const location = useLocation();
+    const navigate = useNavigate();
 
     const {signIn, signInGoogle, user} = useContext(AuthContext);
-
+   
     const handleLogin = async (e)=>{
         e.preventDefault();
  
@@ -17,6 +20,9 @@ const Login = () => {
         //  console.log(email, password);
         const login = await signIn(email,password);
         // console.log(login.user)
+        if(login.user){
+            navigate(location?.state ? location.state : "/")
+        }
         
      }
 
@@ -26,6 +32,10 @@ const Login = () => {
 
         const login = await signInGoogle();
         // console.log(login.user)
+
+        if(login.user){
+            navigate(location?.state ? location.state : "/")
+        }
 
      }
 

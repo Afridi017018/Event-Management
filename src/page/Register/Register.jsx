@@ -1,25 +1,26 @@
 import React from 'react';
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../components/providers/AuthProvider';
 
 const Register = () => {
-    const {createUser, updateUser} = useContext(AuthContext)
+    const { createUser, updateUser } = useContext(AuthContext)
+    const navigate = useNavigate();
 
-    const handleRegister = async (e)=>{
-       e.preventDefault();
+    const handleRegister = async (e) => {
+        e.preventDefault();
 
-       const newForm = new FormData(e.currentTarget);
-       const name = newForm.get('name');
+        const newForm = new FormData(e.currentTarget);
+        const name = newForm.get('name');
         const photo = newForm.get('photo');
         const email = newForm.get('email');
         const password = newForm.get('password');
         // console.log(name, photo, email, password);
 
-        const now =await createUser(email,password,name,photo)
-        await updateUser(name,photo);
+        const now = await createUser(email, password, name, photo)
+        await updateUser(name, photo);
 
-        console.log(now.user);
-   
+        navigate("/login");
     }
 
     return (
@@ -31,7 +32,7 @@ const Register = () => {
                     </div>
                     <div data-aos="fade-right" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleRegister} className="card-body">
-                        <div className="form-control">
+                            <div className="form-control">
                                 <label className="label">
                                     <span className="label-text">Name</span>
                                 </label>
@@ -58,7 +59,7 @@ const Register = () => {
                                     <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
                             </div>
-                            
+
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
                             </div>
