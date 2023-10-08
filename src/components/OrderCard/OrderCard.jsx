@@ -5,7 +5,7 @@ const OrderCard = ({element}) => {
         <div className='my-10 px-20'>
             <div className='rounded-lg lg:flex gap-10 shadow-lg border'>
              <div>
-             <img className=' h-56 w-full lg:w-96 flex-1 rounded-l-lg' src={element.image} alt="" />
+             <img className='h-56 w-full lg:w-96 flex-1 rounded-t-lg lg:rounded-r-none lg:rounded-l-lg' src={element.image} alt="" />
              </div>
              <div className='flex-1 flex flex-col justify-center my-3 lg:my-0 px-3 lg:px-0'>
                 <h2 className='text-2xl font-bold'>{element.name}</h2>

@@ -15,6 +15,7 @@ import Register from './page/Register/Register.jsx';
 import AuthProvider from './components/providers/AuthProvider.jsx';
 import ServiceDetails from './page/ServiceDetails/ServiceDetails.jsx';
 import Orders from './page/Orders/Orders.jsx';
+import Blogs from './page/Blogs/Blogs.jsx';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,11 @@ const router = createBrowserRouter([
         path: "/orders",
         loader: () => fetch('/fakeData.json'),
         element: <Orders/>,
+      },
+      {
+        path: "/blogs",
+        loader: () => fetch('/fakeBlogData.json'),
+        element: <Blogs/>,
       },
       {
         path: "/login",
