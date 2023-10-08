@@ -50,7 +50,7 @@ const Login = () => {
             toast.error(error.message);
         }
 
-   
+
 
     }
 
@@ -78,9 +78,7 @@ const Login = () => {
                                     <span className="label-text">Password</span>
                                 </label>
                                 <input type="password" placeholder="password" name='password' className="input input-bordered" required />
-                                <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                                </label>
+
                             </div>
 
                             <div className="form-control mt-6">
@@ -92,7 +90,7 @@ const Login = () => {
                                 <div>Sign In With Google</div>
                             </div>
                             <div className='text-center text-gray-500'>
-                            <p>Don't have an account? <span className='text-blue-700'><Link to="/register">Register</Link></span></p>
+                                <p>Don't have an account? <span className='text-blue-700'><Link to="/register">Register</Link></span></p>
                             </div>
                         </form>
                     </div>

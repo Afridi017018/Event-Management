@@ -19,26 +19,26 @@ const Register = () => {
         const photo = newForm.get('photo');
         const email = newForm.get('email');
         const password = newForm.get('password');
-       
+
         if (passwordPattern.test(password)) {
             setPasswordMessage("");
             try {
-                
+
                 const now = await createUser(email, password, name, photo)
                 await updateUser(name, photo);
                 toast.dismiss();
                 toast.success("Registered Successfully !");
                 navigate("/login");
-    
+
             } catch (error) {
                 toast.error(error.message);
             }
-            
-          } else {
+
+        } else {
             setPasswordMessage('*Password should be at least 6 characters long and include at least one capital letter and one special character.');
-          }
-     
-        
+        }
+
+
     }
 
     return (
@@ -80,13 +80,13 @@ const Register = () => {
 
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
-                                
+
                             </div>
                             <div className='text-center text-gray-500'>
-                            <p>Already have an account? <span className='text-blue-700'><Link to="/login">Login</Link></span></p>
+                                <p>Already have an account? <span className='text-blue-700'><Link to="/login">Login</Link></span></p>
                             </div>
                         </form>
-                        
+
                     </div>
                 </div>
             </div>
