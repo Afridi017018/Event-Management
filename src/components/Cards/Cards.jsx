@@ -15,7 +15,7 @@ const Cards = () => {
            {
             data.length > 0 &&
             data.map((element)=>(
-                <div key={element.id}>
+                <div data-aos="zoom-in-up" key={element.id}>
                     <Card element={element} />
                 </div>
             ))

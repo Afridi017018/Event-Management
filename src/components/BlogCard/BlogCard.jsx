@@ -10,8 +10,8 @@ const BlogCard = ({ element }) => {
             <>
                 {text}
                 {" "}
-                <button onClick={()=>setSeeMore(false)} className='text-blue-600 font-medium'>See less</button>
-                
+                <button onClick={() => setSeeMore(false)} className='text-blue-600 font-bold'>See less</button>
+
             </>
         )
     }
@@ -19,10 +19,10 @@ const BlogCard = ({ element }) => {
     const shortText = (text) => {
         return (
             <>
-                {text.slice(0,500)}
+                {text.slice(0, 500)}
                 {" ... "}
-                <button onClick={()=> setSeeMore(true)} className='text-blue-600 font-medium'>See more</button>
-                
+                <button onClick={() => setSeeMore(true)} className='text-blue-600 font-bold'>See more</button>
+
             </>
         )
     }
@@ -33,7 +33,9 @@ const BlogCard = ({ element }) => {
             <div className='text-center'>
                 <h2 className='text-2xl font-bold'>{element.title}</h2>
             </div>
+
             <hr className='my-3' />
+
             <div>
                 <p className='text-gray-700'>{seeMore ? fullText(element.blog) : shortText(element.blog)}</p>
             </div>

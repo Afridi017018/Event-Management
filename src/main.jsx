@@ -17,6 +17,7 @@ import ServiceDetails from './page/ServiceDetails/ServiceDetails.jsx';
 import Orders from './page/Orders/Orders.jsx';
 import Blogs from './page/Blogs/Blogs.jsx';
 
+
 const router = createBrowserRouter([
   {
     path: "/",
