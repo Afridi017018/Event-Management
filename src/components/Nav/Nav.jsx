@@ -1,12 +1,12 @@
 import React from 'react';
 import { useContext } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../providers/AuthProvider';
 
 const Nav = () => {
 
     const { user, logOut } = useContext(AuthContext);
-    // console.log(user)
+    const navigate = useNavigate()
 
     const handleLogOut = async () => {
         await logOut();
@@ -72,7 +72,7 @@ const Nav = () => {
         {
             user === null ||
             <>
-                <li onClick={handleLogOut} className='lg:hidden'>
+                <li onClick={handleLogOut} className='lg:hidden font-bold text-red-700'>
                     <NavLink>Logout</NavLink>
                 </li>
             </>
@@ -123,13 +123,28 @@ const Nav = () => {
                         </ul>
 
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Event Station</a>
+                    <div onClick={()=>navigate("/")} className="text-xl font-bold flex cursor-pointer">
+                        <div className='bg-green-700 text-white text-center px-2 py-1 rounded-l-md'>
+                            Event
+                        </div>
+                        <div className='bg-red-700 text-white text-center px-2 py-1 rounded-r-md'>
+                            Station
+                        </div>
+                    </div>
                 </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu-horizontal px-1">
+                <div className="navbar-center">
+                    <ul className="menu-horizontal px-1 hidden lg:flex">
                         {links}
 
                     </ul>
+                    {/* <div onClick={()=>navigate("/")} className="text-xl font-bold lg:hidden flex cursor-pointer">
+                        <div className='bg-green-700 text-white text-center px-2 py-1 rounded-l-md'>
+                            Event
+                        </div>
+                        <div className='bg-red-700 text-white text-center px-2 py-1 rounded-r-md'>
+                            Station
+                        </div>
+                    </div> */}
                 </div>
                 <div className="navbar-end">
                     <ul className="px-1">
@@ -149,11 +164,10 @@ const Nav = () => {
                                 <li className='flex items-center'>
                                     {user.displayName}
                                 </li>
-                                <li onClick={handleLogOut} className='hidden lg:flex items-center cursor-pointer'>
+                                <li onClick={handleLogOut} className='hidden lg:flex items-center cursor-pointer font-bold text-red-700'>
                                     Logout
                                 </li>
                             </div>
-
 
                         }
 

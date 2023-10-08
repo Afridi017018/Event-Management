@@ -1,9 +1,11 @@
 import React from 'react';
+import { useContext } from 'react';
 import { useLoaderData, useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2'
+import { AuthContext } from '../../components/providers/AuthProvider';
 
 const ServiceDetails = () => {
-
+const {user} = useContext(AuthContext)
     const { id } = useParams();
 
     const serviceData = useLoaderData();
@@ -18,10 +20,10 @@ const ServiceDetails = () => {
 
     const handleOrder = () => {
 
-        const newId = JSON.parse(localStorage.getItem("order_ids")) || [];
+        const newId = JSON.parse(localStorage.getItem(user.email)) || [];
 
         newId.push({ id: id })
-        localStorage.setItem("order_ids", JSON.stringify(newId));
+        localStorage.setItem(user?.email, JSON.stringify(newId));
 
 
         Swal.fire(

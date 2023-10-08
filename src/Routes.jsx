@@ -9,6 +9,7 @@ import ServiceDetails from './page/ServiceDetails/ServiceDetails.jsx';
 import Orders from './page/Orders/Orders.jsx';
 import Blogs from './page/Blogs/Blogs.jsx';
 import PrivateRoute from "./PrivateRoute.jsx";
+import PublicRoute from "./PublicRoute.jsx";
 
 export const router = createBrowserRouter([
     {
@@ -38,11 +39,11 @@ export const router = createBrowserRouter([
         },
         {
           path: "/login",
-          element: <Login />,
+          element: <PublicRoute><Login /></PublicRoute>,
         },
         {
           path: "/register",
-          element: <Register />,
+          element: <PublicRoute><Register /></PublicRoute>,
         },
         
       ],

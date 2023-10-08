@@ -1,12 +1,14 @@
 import React from 'react';
+import { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import OrderCard from '../OrderCard/OrderCard';
+import { AuthContext } from '../providers/AuthProvider';
 
 const OrderCards = () => {
-
+const {user} = useContext(AuthContext)
     const allOrders = useLoaderData();
 
-    const getOrderInfo = JSON.parse(localStorage.getItem("order_ids")) || [];
+    const getOrderInfo = JSON.parse(localStorage.getItem(user?.email)) || [];
 
     const orderInfo = getOrderInfo.map((e) => {
         // console.log(e)

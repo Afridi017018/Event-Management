@@ -1,8 +1,16 @@
-# React + Vite
+# Event-Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## [ Live Site Link](https://classroom.github.com/a/ehOGNGkI)
 
-Currently, two official plugins are available:
+### **Feature Highlights**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **User Authentication:** The website offers user registration and login functionality, providing a personalized experience for users.
+
+- **Google Sign-Up Integration:** Users can conveniently sign up for the platform using their Google credentials, streamlining the registration process.
+
+- **Service Listings:** The homepage features a comprehensive list of event services available, making it easy for users to explore and discover various options.
+
+- **Service Details:** Users can click on specific services to access detailed information, helping them make informed decisions when planning their events.
+
+- **Order History:** The platform maintains a record of users' past event service orders, allowing for easy reference and reordering for future events.
+
