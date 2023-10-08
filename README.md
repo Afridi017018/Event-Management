@@ -1,6 +1,6 @@
 # Event-Management
 
-## [ Live Site Link](https://classroom.github.com/a/ehOGNGkI)
+## [ Live Site Link](https://event-station-bfbcf.web.app/)
 
 ### **Feature Highlights**
 

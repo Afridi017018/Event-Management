@@ -9,7 +9,7 @@ const Login = () => {
     const location = useLocation();
     const navigate = useNavigate();
 
-    const { signIn, signInGoogle, user } = useContext(AuthContext);
+    const { signIn, signInGoogle, user, setLoading } = useContext(AuthContext);
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -24,11 +24,13 @@ const Login = () => {
             toast.dismiss();
             toast.success("Login Successful !");
             if (login.user) {
+
                 navigate(location?.state ? location.state : "/")
             }
 
         } catch (error) {
             toast.error(error.message);
+            setLoading(false);
         }
 
 
@@ -48,6 +50,7 @@ const Login = () => {
 
         } catch (error) {
             toast.error(error.message);
+ 
         }
 
 

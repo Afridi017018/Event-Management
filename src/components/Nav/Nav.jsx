@@ -158,7 +158,7 @@ const Nav = () => {
                             <div className='pr-5 lg:pr-0 flex gap-2 flex-row lg:gap-5 font-medium lg:text-lg'>
                                 <li className='flex items-center'>
                                     <div>
-                                        <img className='h-6 w-6 lg:h-8 lg:w-9 rounded-full' src={user.photoURL} alt="" />
+                                        <img className='h-6 w-6 lg:h-9 lg:w-9 rounded-full' src={user.photoURL} alt="" />
                                     </div>
                                 </li>
                                 <li className='flex items-center'>

@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 import { useState } from 'react';
 
 const Register = () => {
-    const { createUser, updateUser } = useContext(AuthContext)
+    const { createUser, updateUser, setLoading } = useContext(AuthContext)
     const [passwordMessage, setPasswordMessage] = useState("");
     const navigate = useNavigate();
 
@@ -32,6 +32,7 @@ const Register = () => {
 
             } catch (error) {
                 toast.error(error.message);
+                setLoading(false);
             }
 
         } else {
