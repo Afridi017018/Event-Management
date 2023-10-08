@@ -1,26 +1,44 @@
 import React from 'react';
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../components/providers/AuthProvider';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 const Register = () => {
     const { createUser, updateUser } = useContext(AuthContext)
+    const [passwordMessage, setPasswordMessage] = useState("");
     const navigate = useNavigate();
 
     const handleRegister = async (e) => {
         e.preventDefault();
 
+        const passwordPattern = /^(?=.*[A-Z])(?=.*[\W_]).{6,}$/;
         const newForm = new FormData(e.currentTarget);
         const name = newForm.get('name');
         const photo = newForm.get('photo');
         const email = newForm.get('email');
         const password = newForm.get('password');
-        // console.log(name, photo, email, password);
-
-        const now = await createUser(email, password, name, photo)
-        await updateUser(name, photo);
-
-        navigate("/login");
+       
+        if (passwordPattern.test(password)) {
+            setPasswordMessage("");
+            try {
+                
+                const now = await createUser(email, password, name, photo)
+                await updateUser(name, photo);
+                toast.dismiss();
+                toast.success("Registered Successfully !");
+                navigate("/login");
+    
+            } catch (error) {
+                toast.error(error.message);
+            }
+            
+          } else {
+            setPasswordMessage('*Password should be at least 6 characters long and include at least one capital letter and one special character.');
+          }
+     
+        
     }
 
     return (
@@ -56,14 +74,19 @@ const Register = () => {
                                 </label>
                                 <input type="password" placeholder="password" name='password' className="input input-bordered" required />
                                 <label className="label">
-                                    <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+                                    <p className='text-red-500 text-sm'>{passwordMessage}</p>
                                 </label>
                             </div>
 
                             <div className="form-control mt-6">
                                 <button className="btn btn-primary">Register</button>
+                                
+                            </div>
+                            <div className='text-center text-gray-500'>
+                            <p>Already have an account? <span className='text-blue-700'><Link to="/login">Login</Link></span></p>
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
