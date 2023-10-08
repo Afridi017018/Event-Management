@@ -43,13 +43,13 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className='px-5'>
             <div className="hero min-h-screen bg-base-100">
                 <div className="hero-content flex-col lg:flex-row-reverse">
                     <div className="text-center lg:text-left">
-                        <img className='h-96 w-[500px]' src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-232.jpg?w=360&t=st=1696693904~exp=1696694504~hmac=40972f5d168fba7be17675f3c6ee18a3d39b16876adec476bcf222c7418e1982" alt="" />
+                        <img data-aos="fade-up" className='h-96 w-full lg:w-[500px]' src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-232.jpg?w=360&t=st=1696693904~exp=1696694504~hmac=40972f5d168fba7be17675f3c6ee18a3d39b16876adec476bcf222c7418e1982" alt="" />
                     </div>
-                    <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+                    <div data-aos="fade-down" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleRegister} className="card-body">
                             <div className="form-control">
                                 <label className="label">

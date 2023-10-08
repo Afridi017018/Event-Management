@@ -8,7 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 AOS.init({
   offset: 200,
-  duration: 1000,
+  duration: 1200,
   delay: 100,
 });
 
